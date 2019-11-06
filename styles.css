@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Syncopate:400,700&display=swap");
+
+:root {
+  --black: #1a1a1a;
+  --red: #dd6e55d0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  margin: 0;
+  font-family: Syncopate, sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 9fr 2fr 9fr;
+  grid-template-rows: 4fr 2fr 4fr;
+}
+
+h1 {
+  font-size: 2.25rem;
+  letter-spacing: 0.35rem;
+}
+
+h1::first-letter {
+  font-size: 3rem;
+}
+
+ul {
+  padding: 5px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 0.25em;
+  text-decoration-offset: 5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+small {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.first {
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middle {
+  height: 100%;
+  width: 100%;
+  border-right: 30px solid var(--black);
+  border-bottom: 3px solid var(--black);
+  border-left: 3px solid var(--black);
+}
+
+.last {
+  height: 100%;
+  width: 100%;
+  border-right: 30px solid var(--black);
+  border-bottom: 3px solid var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.heading {
+  margin-left: 5rem;
+}
+
+.title--first {
+  width: 90%;
+  margin-left: 5rem;
+}
+
+.title--second {
+  margin-right: 5rem;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.number {
+  font-size: 3.5rem;
+}
+
+.credit {
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+}
